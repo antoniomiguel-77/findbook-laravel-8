@@ -1,0 +1,384 @@
+/*RESET DA PAGINA*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+a{text-decoration: none;}
+ul{list-style:none;}
+html{
+    scroll-behavior:smooth;
+}
+/*HEADER*/
+header{
+    background-image: url('/img/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+
+}
+
+header img{
+    width: 70px;
+    margin: 5px 0 0 14px;
+    
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+header nav .menu{
+display: flex;
+font-size: 18px;
+text-transform: uppercase;
+}
+header nav .menu li{
+    margin:0  14px 0 0;
+    color: #fff;
+}
+header nav .menu li a{
+    padding: 10px;
+    border-radius: 5px;
+    color:#fff;
+}
+header nav .menu li .home:hover{
+    border-bottom:2px solid #198754;
+}
+header nav .menu li .btn-cad{
+    background-color: #198754b7;
+    font-weight: bold;
+    opacity: .8;
+    
+}
+header nav .menu li .btn-cad:hover{
+    opacity: 1;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo > p{
+    color:#fff;
+    font-weight: 900;
+    font-size: 30px;
+    margin-left: 10px;
+
+}
+/*FIELD OF SEARCH*/
+.fild_search {
+display: flex;
+justify-content: center;
+ 
+}
+
+.fild_search input[type='search']{
+    margin-top: 3rem;
+    width: 50%;
+    height: 3rem;
+    border-radius: 6px;
+    border:none;
+    padding: 10px;
+    font-size: 14px;
+}
+ 
+ 
+
+
+
+
+/*FOOTER*/
+footer{
+
+    height: auto;
+    /* Original color->#011638*/
+    background-color: #011638;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20%;
+  
+}
+ footer h4{
+     margin-bottom: 5px;
+     font-size: 30px;
+ }
+footer .social {
+    display: flex;
+    justify-content: center;
+}
+footer .social  a > img{
+    width: 50px;
+    margin-left:5px;
+    
+}
+
+/* BOOKS SHOW*/
+section{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap ;
+    align-items: center;
+    margin: 10px 0 10px 0px;
+}
+section article{
+    margin: 20px;
+
+}
+section .cards {
+    box-shadow: 2px 2px 5px #011638;
+    border-radius:5% ;
+    width: 15rem;
+    
+}
+
+section .cards img{
+    width: 100%;
+    height:150px ;
+    border-top-right-radius:5% ;
+    border-top-left-radius:5% ;
+  
+}
+
+
+section .cards figcaption .info{
+    padding: 10px;
+}
+section .cards figcaption .info p{
+   font-weight: 500;
+    font-size: 14px;
+    margin-top:5px;
+    color:rgb(65, 60, 60);
+ 
+}
+section .cards figcaption .bottons{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+   
+}
+
+section .cards figcaption .bottons .btn-1,.btn-2{
+   background-color: #198754;
+   padding: 10px;
+   color: #fff;
+   margin-bottom: 5px;
+   border-radius: 5px;
+    
+   width: 100%;
+   text-align: center;
+   font-weight: bold;
+   
+   
+}
+section .cards figcaption .bottons .btn-1{
+    background-color: #871928;
+ 
+    
+ }
+ #info-search{
+     padding: 2rem;
+     color:rgb(65, 60, 60);
+ }
+ #info-search-none{
+    color:rgb(65, 60, 60);
+ }
+
+ #info-search-none a{
+    color: #198754;
+   
+ }
+
+/*form login*/
+ .login{
+    width: 100px;
+    margin:0 auto 20px;
+     
+ }
+ /*title reset password*/
+ .titulo{
+     font-weight: bold;
+     text-align: center;
+     text-transform: uppercase;
+     margin: 10px 0 10px 0;
+ }
+ /*form register books*/
+ 
+ .form-group{
+     margin-bottom: 20px;
+ }
+ .form-group label{
+    font-weight: bold;
+}
+section form {
+    margin-top: 10px;  
+    width: 100%;
+    
+}
+ section form  .btn{
+     margin: 1rem 80%;  
+     width: 20%;
+     
+ }
+
+ /*Profile Admin*/
+ .secao-adm{
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+ }
+ .secao-adm table tbody tr td img{
+     width: 50px;
+     border-radius: 5%;
+ }
+.secao-adm .msg{
+
+    background-color: #57a7819f;
+    color:#fff;
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+    
+}
+.secao-adm h4{
+    margin: 2rem 0;
+    font-size: 30px;
+   
+}
+ 
+ .menu-adm{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #2a5d84;
+     color:#fff;
+ }
+ .menu-adm > ul{
+     display: flex;
+     margin-right:2rem ;
+     align-items: center;
+    
+ }
+ .menu-adm > ul li a{
+    padding: 1.9rem;
+    color:#fff;
+    text-transform: uppercase;
+    transition: 1s;
+ }
+ .menu-adm > ul li form {
+    margin-top: -.0rem;
+     
+}
+ .menu-adm > ul li a:hover{
+     background-color: #1f3c52;
+     border-bottom: 5px solid #fff;
+ }
+ .table-book thead{
+     background-color: #000;
+     color: #fff;
+     
+ }
+ /*Botao de deletar registros*/
+#deletar{
+
+  display: flex;
+  justify-content: flex-end;
+}
+#deletar button{
+    position: relative;
+    top: -1.5rem;
+    right: -2.5rem;
+     width:100% ;
+}
+/*Form preview de edicao de imagem*/
+#preview{
+    width: 100px;
+}
+/*logo dashboard*/
+#logo-dashboard{
+    width: 70px;
+    padding: 1px;
+}
+
+ /*Read area*/
+ #read-area {
+     width: 100%;
+     height: 100vh;
+ }
+
+ /*BREAK POINTER MIDDLE DEVICE*/
+ @media screen and (max-width:768px ) {
+     /*BANNER*/
+    header{height: 25vh;}
+    /*LOGO*/
+    header img{
+        width: 40px;
+        margin: 5px 0 0 14px;
+        
+    }
+    .logo > p{font-size: 20px;}
+      
+    /*lINKS OF NAVEGATION*/
+    header nav .menu{
+        display: flex;
+        font-size: 14px;
+        text-transform: capitalize;
+        }
+
+        /*FIELD OF SEARCH*/
+        .fild_search input[type='search']{
+            width: 50%;
+            height: 1.5rem;
+            border-radius: 4px;
+            padding: 10px;
+            font-size: 12px;
+        }
+        /*CARDS SHOW BOOKS*/
+        
+        section .cards {
+            border-radius:2% ;
+            width: 10rem;
+            
+        }
+        section .cards img{
+            width: 100%;
+            height:100px ;
+          
+          
+        }
+        section .cards figcaption .info p{
+             font-weight: 600;
+             font-size: 12px;
+           
+          
+         }
+
+         section .cards figcaption .bottons .btn-1,.btn-2{
+            padding: 5px;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            font-weight: 600;
+            
+            
+         }
+        
+    
+    
+ }
+
+ /*BREAK POINTER SMALL DEVICE*/
+ @media screen and (max-width:768px ) {
+    header{height: 15vh;}
+ }
+
+ 
+ 
+ 
+ 
+
+ 
+ 
