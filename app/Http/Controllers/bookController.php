@@ -34,7 +34,8 @@ class bookController extends Controller
     }
     /**Metodo para realizar cadastro de livros */
     public function store(Request $request){
-            $book = new Book();
+         
+            $input = $request->all();
             if(($request->hasFile('capa') && $request->hasFile('livro')) && ($request->file('capa')->isValid() && $request->file('livro')->isValid())){
 
                 $requestCapa = $request->capa;
@@ -45,14 +46,12 @@ class bookController extends Controller
                 $livroName = md5($requestLivro->getClientOriginalName().strtotime('now')).'.'.$extensionLivro;
                 $requestCapa->move(public_path('/img/capa/'),$capaName);
                 $requestLivro->move(public_path('/book'),$livroName);
-                $book->capa = $capaName;
-                $book->livro = $livroName;
+                $input['capa'] = $capaName;
+                $input['livro'] = $livroName;
             }
-            $book->titulo = $request->titulo;
-            $book->autor = $request->autor;
-            $book->editora = $request->editora;
+           
 
-            $book->save();
+            Book::create($input);
 
       return  redirect('/books/dashboard')->with('msg','Livro cadastrado com sucesso');
 
